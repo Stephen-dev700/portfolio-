@@ -9,25 +9,29 @@
 <body>
 <nav>
     <ul>
+        <button id="darkModeToggle">🌙 Mode</button>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-
-
     </ul>
 </nav>
 <section class="hero" id="home">
-    <h1>Hi, I'm Stephen Ifeoluwa</h1>
+    <h1>Hi,I'm Stephen Ifeoluwa</h1>
     <p>Frontend Web Developer</p>
     <p>I build modern websites using HTML, CSS, and JavaScript.</p>
-    <a href="#projects" class="hero-btn">View Projects</a>
+    <a href="#projects" class="hero-btn">View My Work</a>
+    <a href="Stephen-Ifeoluwa-CV.pdf" download class="cv-btn">Download CV</a>
 </section>
 
 <section id="about">
     <h2>About Me</h2>
-    <p>I am a web developer who builds websites using HTML, CSS, and JavaScript.</p>
+    <p>
+        I am a passionate frontend developer focused on building clean, responsive, and user-friendly websites.
+        I enjoy turning ideas into real digital experiences using HTML, CSS, and JavaScript.
+        I am currently improving my skills and building projects to grow as a developer.
+    </p>
 </section>
 
 <section id="skills">
@@ -49,19 +53,22 @@
     <h2>My Projects</h2>
     <div class="project-container">
         <div class="project-card">
+            <img src="https://via.placeholder.com/400x250" alt="Portfolio Website Screenshot">
             <h3>Portfolio Website</h3>
-            <p>A personal website built using HTML, CSS, and JavaScript.</p>
-            <a href="https://your-live-demo.com" target="_blank">View Project</a>
+            <p>A personal portfolio website to showcase my skills, projects, and contact information.</p>
+            <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
         </div>
         <div class="project-card">
+            <img src="https://via.placeholder.com/400x250" alt="Landing Page Screenshot">
             <h3>Landing Page</h3>
-            <p>A simple landing page for a product using HTML and CSS.</p>
-            <a href="https://your-live-demo.com" target="_blank">View Project</a>
+            <p>A responsive landing page built with HTML and CSS, focused on clean design and layout.</p>
+            <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
         </div>
         <div class="project-card">
+            <img src="https://via.placeholder.com/400x250" alt="To-Do App Screenshot">
             <h3>To-Do App</h3>
-            <p>A JavaScript app to manage tasks with add/remove features.</p>
-            <a href="https://your-live-demo.com" target="_blank">View Project</a>
+            <p>A simple task management app built with JavaScript to add and remove tasks.</p>
+            <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
         </div>
     </div>
 </section>
@@ -103,4 +110,21 @@
     window.addEventListener("load", showSections);
     window.addEventListener("scroll", showSections);
 </script>
+
+<script>
+    const toggle = document.getElementById("darkModeToggle");
+
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if(document.body.classList.contains("dark-mode")){
+            toggle.textContent = "☀️";
+        } else {
+            toggle.textContent = "🌙";
+        }
+    });
+</script>
 </html>
+<footer>
+    <p>© 2026 Stephen Ifeoluwa. All rights reserved.</p>
+</footer>
