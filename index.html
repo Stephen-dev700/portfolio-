@@ -1,140 +1,317 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
-    <title>Stephen's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Ifeoluwa | Junior Software Developer</title>
+    <meta name="description" content="Portfolio of Stephen Ifeoluwa, a junior software developer in Nigeria building web applications with Java, Spring Boot, MySQL and JavaScript.">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
-<nav>
-    <ul>
-        <button id="darkModeToggle">🌙 Mode</button>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-<section class="hero" id="home">
-    <h1>Hi,I'm Stephen Ifeoluwa</h1>
-    <p>Frontend Web Developer</p>
-    <p>I build modern websites using HTML, CSS, and JavaScript.</p>
-    <a href="#projects" class="hero-btn">View My Work</a>
-    <a href="Stephen-Ifeoluwa-CV.pdf" download class="cv-btn">Download CV</a>
-</section>
+<header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-logo" href="#home" aria-label="Stephen Ifeoluwa home">SI</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#engineering">Engineering</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="darkModeToggle" type="button" aria-label="Switch to light theme">☀</button>
+    </nav>
+</header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I'm Stephen, a passionate web designer focused on creating modern, clean, and responsive websites.
-        I enjoy turning ideas into real digital experiences that look great and work smoothly.
-    </p>
-</section>
-<section id="skills">
-    <h2>My Skills</h2>
-    <p class="skills-subtext">Technologies I'm working with and improving daily</p>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Building structured and semantic web pages</p>
+<main>
+    <section class="hero reveal-section" id="home">
+        <div class="hero-copy">
+            <p class="eyebrow">Portfolio / backend-focused web development</p>
+            <h1>Stephen Ifeoluwa</h1>
+            <p class="role">Junior Software Developer</p>
+            <p class="tagline">Java · Spring Boot · MySQL · JavaScript</p>
+            <p class="hero-summary">
+                I build responsive web applications and am currently focused on backend engineering with Java, Spring Boot, secure workflows and MySQL-backed data.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">View Projects</a>
+                <a class="btn btn-secondary" href="https://github.com/Stephen-dev700" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
         </div>
 
-        <div class="skill-card">
-            <h3>CSS</h3>
-            <p>Designing responsive and modern UI layouts</p>
+        <div class="hero-panel" aria-label="Stephen Ifeoluwa profile summary">
+            <div class="portrait-shell">
+                <img src="images/stephen.jpg" alt="Portrait of Stephen Ifeoluwa">
+            </div>
+            <div class="availability-card">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Open to junior software developer opportunities</span>
+            </div>
+            <dl class="hero-facts">
+                <div>
+                    <dt>Current focus</dt>
+                    <dd>Spring Boot backend systems</dd>
+                </div>
+                <div>
+                    <dt>Location</dt>
+                    <dd>Nigeria</dd>
+                </div>
+                <div>
+                    <dt>Portfolio goal</dt>
+                    <dd>Clear proof of project quality</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+    <section class="section-intro reveal-section" aria-labelledby="work-focus-title">
+        <p class="eyebrow">What this portfolio shows</p>
+        <h2 id="work-focus-title">Practical projects, careful interfaces and growing backend depth.</h2>
+        <div class="proof-grid" aria-label="Portfolio focus areas">
+            <article>
+                <span>01</span>
+                <h3>Published frontend work</h3>
+                <p>Responsive JavaScript projects with real live links and clear user-facing behavior.</p>
+            </article>
+            <article>
+                <span>02</span>
+                <h3>Backend workflow thinking</h3>
+                <p>StevCode Connect demonstrates authentication, request handling, interest flow and persistence.</p>
+            </article>
+            <article>
+                <span>03</span>
+                <h3>Honest presentation</h3>
+                <p>No fake metrics, missing links or inflated claims. Each project is shown according to its real status.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="projects-section reveal-section" id="projects">
+        <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects that show the range of my current ability.</h2>
         </div>
 
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Learning interactivity and dynamic web features</p>
+        <article class="featured-project" aria-labelledby="connect-title">
+            <div class="featured-copy">
+                <div class="project-topline">
+                    <span class="project-label">Flagship backend project</span>
+                    <span class="status-pill">In Development</span>
+                </div>
+                <h3 id="connect-title">StevCode Connect</h3>
+                <p>
+                    A community-help platform intended to help people request and offer assistance through a structured workflow. The current work focuses on the backend API, security, request lifecycle and database persistence.
+                </p>
+                <ul class="feature-list">
+                    <li>Authentication and authorization using Spring Security and JWT.</li>
+                    <li>Help-request and help-interest workflows.</li>
+                    <li>Selection and finalization logic for accepted help.</li>
+                    <li>Input validation and database persistence through Spring Data JPA, Hibernate and MySQL.</li>
+                </ul>
+                <p class="project-note">
+                    Repository and live deployment are not public yet, so this project is presented without GitHub or demo links.
+                </p>
+            </div>
+
+            <div class="workflow-card" aria-label="StevCode Connect workflow">
+                <div class="workflow-step">
+                    <span>1</span>
+                    <strong>Authenticate</strong>
+                    <p>JWT-secured access protects user actions.</p>
+                </div>
+                <div class="workflow-line" aria-hidden="true"></div>
+                <div class="workflow-step">
+                    <span>2</span>
+                    <strong>Request Help</strong>
+                    <p>A user creates a validated help request.</p>
+                </div>
+                <div class="workflow-line" aria-hidden="true"></div>
+                <div class="workflow-step">
+                    <span>3</span>
+                    <strong>Show Interest</strong>
+                    <p>Other users register interest in helping.</p>
+                </div>
+                <div class="workflow-line" aria-hidden="true"></div>
+                <div class="workflow-step">
+                    <span>4</span>
+                    <strong>Select &amp; Finalize</strong>
+                    <p>The request moves toward completion.</p>
+                </div>
+                <div class="stack-strip" aria-label="Technology stack">
+                    <span>Java 21</span>
+                    <span>Spring Boot</span>
+                    <span>Spring Security</span>
+                    <span>JWT</span>
+                    <span>JPA</span>
+                    <span>Hibernate</span>
+                    <span>MySQL</span>
+                    <span>Postman</span>
+                </div>
+            </div>
+        </article>
+
+        <div class="project-grid" aria-label="Published projects">
+            <article class="project-card">
+                <img class="project-visual" src="images/novatech.png" alt="NovaTech e-commerce storefront showing its product search and filters">
+                <div class="project-body">
+                    <p class="project-label">Published frontend project</p>
+                    <h3>NovaTech E-commerce Store</h3>
+                    <p>A responsive e-commerce storefront with dynamic product rendering, search and filtering.</p>
+                    <p class="project-tech">HTML · CSS · JavaScript</p>
+                    <ul class="compact-list">
+                        <li>Dynamic product rendering</li>
+                        <li>Search and filtering</li>
+                        <li>Responsive design</li>
+                        <li>DOM-driven interactions</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://stephen-dev700.github.io/novatech-ecommerce-store/" target="_blank" rel="noopener noreferrer">Live site</a>
+                        <a href="https://github.com/Stephen-dev700/novatech-ecommerce-store" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-visual" src="images/studentdashboard.png" alt="StevCode University student portal screenshot showing the dashboard introduction and login form">
+                <div class="project-body">
+                    <p class="project-label">Published frontend project</p>
+                    <h3>StevCode University Student Dashboard</h3>
+                    <p>A student dashboard with a login flow and dynamically displayed student information.</p>
+                    <p class="project-tech">HTML · CSS · JavaScript</p>
+                    <ul class="compact-list">
+                        <li>Login flow</li>
+                        <li>Dashboard rendering</li>
+                        <li>Dynamic student information</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://stephen-dev700.github.io/stevcode-university/" target="_blank" rel="noopener noreferrer">Live site</a>
+                        <a href="https://github.com/Stephen-dev700/stevcode-university" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card project-card-wide">
+                <img class="project-visual" src="images/stevico%20construction.jpg" alt="Stevico Construction and Real Estate website homepage with its navigation and featured property">
+                <div class="project-body">
+                    <p class="project-label">Published client website</p>
+                    <h3>Stevico Construction &amp; Real Estate Website</h3>
+                    <p>A published website built for my mother's construction and real-estate business with a distinct white-and-gold identity.</p>
+                    <p class="project-tech">HTML · CSS · JavaScript</p>
+                    <ul class="compact-list">
+                        <li>Service and project presentation</li>
+                        <li>Image slider</li>
+                        <li>WhatsApp contact option</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://stephen-dev700.github.io/stevico-website/" target="_blank" rel="noopener noreferrer">Live site</a>
+                    </div>
+                </div>
+            </article>
         </div>
+    </section>
 
-        <div class="skill-card">
-            <h3>Responsive Design</h3>
-            <p>Making websites look good on all devices</p>
+    <section class="engineering-section reveal-section" id="engineering">
+        <div class="section-heading">
+            <p class="eyebrow">Engineering ability</p>
+            <h2>How I am approaching backend development in StevCode Connect.</h2>
         </div>
-
-        <div class="skill-card">
-            <h3>Git & GitHub</h3>
-            <p>Managing and deploying projects efficiently</p>
+        <div class="engineering-grid">
+            <article>
+                <h3>Problem</h3>
+                <p>People need an organized way to request help, respond with interest, choose who helps and finalize the interaction.</p>
+            </article>
+            <article>
+                <h3>Backend structure</h3>
+                <p>The API uses Spring Boot and Spring Web for request handling, with Spring Security and JWT for authenticated access.</p>
+            </article>
+            <article>
+                <h3>Data persistence</h3>
+                <p>MySQL stores the application data through Spring Data JPA and Hibernate, keeping workflow state connected to real records.</p>
+            </article>
+            <article>
+                <h3>Implementation focus</h3>
+                <p>I am practicing validation, clear request lifecycles and backend decisions that make the system easier to reason about.</p>
+            </article>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="projects">
-    <h2>My Projects</h2>
-    <p class="projects-subtext">Here are some of the websites I built recently</p>
-
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <h3>StevCode Agency</h3>
-            <p>A modern and responsive landing page for a web design agency.</p>
-            <a href="https://stephen-dev700.github.io/stevcode-agency/" target="_blank">View Live</a>
+    <section class="about-section reveal-section" id="about">
+        <div class="about-layout">
+            <div>
+                <p class="eyebrow">About</p>
+                <h2>I am building from frontend foundations toward complete software systems.</h2>
+            </div>
+            <div class="about-copy">
+                <p>
+                    I started with HTML, CSS and JavaScript, publishing responsive interfaces such as an e-commerce storefront, a student dashboard and a construction and real-estate website.
+                </p>
+                <p>
+                    My current direction is backend engineering. StevCode Connect is where I am applying Java 21, Spring Boot, security, JWT authentication and MySQL-backed persistence to a real workflow.
+                </p>
+                <p>
+                    I care about clear structure, truthful project presentation and building software that a recruiter or client can inspect with confidence.
+                </p>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <h3>Stevico construction website</h3>
-            <p>Built a response business website for a construction brand with modern UI and contact integration.</p>
-            <a href="https://stephen-dev700.github.io/stevico-website/" target="_blank">View Live</a>
+    <section class="skills-section reveal-section" id="skills">
+        <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>A practical stack, shown by where I use it.</h2>
         </div>
+        <div class="skills-grid">
+            <article class="skill-card">
+                <span>Frontend</span>
+                <h3>Published interface work</h3>
+                <p>HTML, CSS, JavaScript and responsive design used across my public projects.</p>
+            </article>
+            <article class="skill-card">
+                <span>Backend</span>
+                <h3>Currently applying</h3>
+                <p>Java, Spring Boot, Spring Web, Spring Security, JWT and REST API patterns in StevCode Connect.</p>
+            </article>
+            <article class="skill-card">
+                <span>Database</span>
+                <h3>Persistence layer</h3>
+                <p>MySQL with Spring Data JPA and Hibernate for database-backed workflows.</p>
+            </article>
+            <article class="skill-card">
+                <span>Tools</span>
+                <h3>Development workflow</h3>
+                <p>Git, GitHub, Postman and IntelliJ IDEA for building, testing requests and managing projects.</p>
+            </article>
+        </div>
+    </section>
 
-    </div>
-</section>
+    <section class="contact-section reveal-section" id="contact">
+        <div class="contact-panel">
+            <p class="eyebrow">Contact</p>
+            <h2>Open to junior software developer opportunities.</h2>
+            <p class="contact-message">For professional enquiries, connect with me on LinkedIn or explore my public work on GitHub.</p>
+            <div class="contact-links">
+                <a class="contact-card contact-card-primary" href="https://linkedin.com/in/ilesanmi-stephen-048931412" target="_blank" rel="noopener noreferrer" aria-label="Connect with Stephen Ifeoluwa on LinkedIn, opens in a new tab">
+                    <span>Connect with me on LinkedIn</span>
+                    <small>Professional profile</small>
+                </a>
+                <a class="contact-card" href="https://github.com/Stephen-dev700" target="_blank" rel="noopener noreferrer" aria-label="Explore Stephen Ifeoluwa's GitHub, opens in a new tab">
+                    <span>Explore my GitHub</span>
+                    <small>Code and public projects</small>
+                </a>
+                <a class="contact-card" href="Stephen-Ifeoluwa-CV.pdf" download
+                   aria-label="Download Stephen Ifeoluwa's CV">
+                    <span>Download my CV</span>
+                    <small>PDF · Junior Software Developer</small>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p class="contact-subtext">Have a project in mind? Let us work together.</p>
+<footer class="site-footer">
+    <p>&copy; 2026 Stephen Ifeoluwa. All rights reserved.</p>
+</footer>
 
-    <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-
-    <p id="form-status"></p>
-</section>
 <script src="script.js"></script>
 </body>
-
-<script>
-    const sections = document.querySelectorAll("section");
-
-    function showSections(){
-        sections.forEach((section, index) => {
-            const sectionTop = section.getBoundingClientRect().top;
-            const trigger = window.innerHeight - 100;
-
-            if(sectionTop < trigger){
-                setTimeout(() => {
-                    section.classList.add("show");
-                }, index * 200); // delay increases per section
-            }
-        });
-    }
-    window.addEventListener("load", showSections);
-    window.addEventListener("scroll", showSections);
-</script>
-
-<script>
-    const toggle = document.getElementById("darkModeToggle");
-
-    toggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-
-        if(document.body.classList.contains("dark-mode")){
-            toggle.textContent = "☀️";
-        } else {
-            toggle.textContent = "🌙";
-        }
-    });
-</script>
 </html>
-<footer>
-    <p>© 2026 Stephen Ifeoluwa. All rights reserved.</p>
-</footer>
